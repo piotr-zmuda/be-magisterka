@@ -1,0 +1,1153 @@
+2024-09-03 14:42:32 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\helpers\\logger.py', reloading
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\agent\\base.py', reloading
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\smart_dataframe\\__init__.py', reloading
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\http\\server.py', reloading
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socketserver.py', reloading
+2024-09-03 14:42:33 [INFO] Running PandasAI with local LLM...
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\threading.py', reloading
+2024-09-03 14:42:33 [INFO] Prompt ID: a6a19c49-758f-485d-a10c-569f4c4c85cf
+2024-09-03 14:42:33 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\generate_chat_pipeline.py', reloading
+2024-09-03 14:42:33 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 14:42:33 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\pipeline.py', reloading
+2024-09-03 14:42:33 [INFO] Executing Step 1: CacheLookup
+2024-09-03 14:42:33 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 14:42:34 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+johnson81;4081;Craig;Johnson
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 14:42:34 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\prompt_generation.py', reloading
+2024-09-03 14:42:34 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 14:42:52 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+2024-09-03 14:42:53 [INFO] Running PandasAI with local LLM...
+2024-09-03 14:42:53 [INFO] Prompt ID: dd0d8021-f890-4131-be24-519cf6824798
+2024-09-03 14:42:53 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 14:42:53 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 14:42:53 [INFO] Executing Step 1: CacheLookup
+2024-09-03 14:42:53 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 14:42:53 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+booker12;9012;Rachel;Booker
+johnson81;4081;Craig;Johnson
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 14:42:53 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 14:42:55 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2024-09-03 14:42:55 [ERROR] Pipeline failed on step 3: Error code: 404 - {'error': {'message': 'model "llama3:latest" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}
+2024-09-03 14:42:55 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_generator.py', reloading
+2024-09-03 14:42:55 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\llm\\base.py', reloading
+2024-09-03 14:42:55 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\llm\\local_llm.py', reloading
+2024-09-03 14:42:55 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\openai\\_utils\\_utils.py', reloading
+2024-09-03 14:42:55 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\openai\\resources\\chat\\completions.py', reloading
+2024-09-03 14:42:55 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\openai\\_base_client.py', reloading
+2024-09-03 14:42:55 [INFO] 127.0.0.1 - - [03/Sep/2024 14:42:55] "POST /api/generateAI HTTP/1.1" 200 -
+2024-09-03 14:43:15 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+2024-09-03 14:43:16 [INFO] Running PandasAI with local LLM...
+2024-09-03 14:43:16 [INFO] Prompt ID: fd43b7e9-7122-4829-8187-4eb091da80ca
+2024-09-03 14:43:16 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 14:43:16 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 14:43:16 [INFO] Executing Step 1: CacheLookup
+2024-09-03 14:43:16 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 14:43:16 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+smith79;5079;Jamie;Smith
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 14:43:16 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 14:43:18 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2024-09-03 14:43:18 [ERROR] Pipeline failed on step 3: Error code: 404 - {'error': {'message': 'model "llama3:latest" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}
+2024-09-03 14:43:18 [INFO] 127.0.0.1 - - [03/Sep/2024 14:43:18] "POST /api/generateAI HTTP/1.1" 200 -
+2024-09-03 14:51:31 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 14:51:31 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 14:52:35 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"],["Unfortunately, I was not able to answer your question, because of the following error:\n\nError code: 404 - {'error': {'message': 'model \"llama3:latest\" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}\n"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"],["Unfortunately, I was not able to answer your question, because of the following error:\n\nError code: 404 - {'error': {'message': 'model \"llama3:latest\" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}\n"],["what this csv is about?"]]
+    
+
+2024-09-03 14:52:36 [INFO] Running PandasAI with local LLM...
+2024-09-03 14:52:36 [INFO] Prompt ID: e03531cf-2344-472b-8a27-1849ca573c97
+2024-09-03 14:52:36 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 14:52:36 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 14:52:36 [INFO] Executing Step 1: CacheLookup
+2024-09-03 14:52:36 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 14:52:36 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+johnson81;4081;Craig;Johnson
+booker12;9012;Rachel;Booker
+jenkins46;9346;Mary;Jenkins
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"],["Unfortunately, I was not able to answer your question, because of the following error:\n\nError code: 404 - {'error': {'message': 'model \"llama3:latest\" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}\n"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"],["Unfortunately, I was not able to answer your question, because of the following error:\n\nError code: 404 - {'error': {'message': 'model \"llama3:latest\" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}\n"],["what this csv is about?"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 14:52:36 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 14:53:28 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+2024-09-03 14:53:28 [INFO] Running PandasAI with local LLM...
+2024-09-03 14:53:28 [INFO] Prompt ID: 83b8af1e-2bc5-462a-9f2b-a1d9cd983718
+2024-09-03 14:53:28 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 14:53:28 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 14:53:28 [INFO] Executing Step 1: CacheLookup
+2024-09-03 14:53:28 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 14:53:28 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+jenkins46;9346;Mary;Jenkins
+smith79;5079;Jamie;Smith
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 14:53:28 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 14:54:32 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 14:54:32 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 14:58:15 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"],["i dont understand the question, can you ask me one more time?"],["what this csv is about?"],["OK"],["sad"],["OK"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"],["i dont understand the question, can you ask me one more time?"],["what this csv is about?"],["OK"],["sad"],["OK"],["what this csv is about?"]]
+    
+
+2024-09-03 14:58:16 [INFO] Running PandasAI with local LLM...
+2024-09-03 14:58:16 [INFO] Prompt ID: eb2f58f1-7c08-4ef3-9304-41f91730b36d
+2024-09-03 14:58:16 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 14:58:16 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 14:58:16 [INFO] Executing Step 1: CacheLookup
+2024-09-03 14:58:16 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 14:58:16 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+johnson81;4081;Craig;Johnson
+grey07;2070;Laura;Grey
+jenkins46;9346;Mary;Jenkins
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["what this csv is about?"],["i dont understand the question, can you ask me one more time?"],["what this csv is about?"],["OK"],["sad"],["OK"],["what this csv is about?"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["what this csv is about?"],["i dont understand the question, can you ask me one more time?"],["what this csv is about?"],["OK"],["sad"],["OK"],["what this csv is about?"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 14:58:16 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 14:58:51 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 14:58:51 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:01:36 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+2024-09-03 15:01:37 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:01:37 [INFO] Prompt ID: 7c8889cc-b9e6-45fd-bf18-22471daea21f
+2024-09-03 15:01:37 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:01:37 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:01:37 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:01:37 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:01:37 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+johnson81;4081;Craig;Johnson
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 15:01:37 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:06:06 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-03 15:06:06 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+johnson81;4081;Craig;Johnson
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-09-03 15:06:06 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Preprompting question
+pre_prompt = "I can help with questions about products. What would you like to know?"
+
+# Update conversation history with pre_prompt
+conversation_history = [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+conversation_history.insert(0, pre_prompt)
+
+# Declare dfs: list[pd.DataFrame]
+dfs = [pd.DataFrame({
+    "Username": ["johnson81", "booker12", "grey07"],
+    "Identifier": [4081, 9012, 2070],
+    "First name": ["Craig", "Rachel", "Laura"],
+    "Last name": ["Johnson", "Booker", "Grey"]
+}), pd.DataFrame({
+    "Product Name": ["Product A", "Product B", "Product C"],
+    "Price (USD)": [100.0, 50.0, 200.0]
+})]
+
+# Write code here
+
+# Ask a question about the products you search
+question = conversation_history[1][0]
+print(question)
+
+# Get user response
+user_response = conversation_history[2][0]
+
+# Process user response to dataframe (example: get product prices)
+product_prices_df = dfs[1]
+highest_price = product_prices_df["Price (USD)"].max()
+print(f"The highest price is ${highest_price}.")
+
+# Declare result var:
+result = {
+    "type": "string",
+    "value": f"The highest price is ${highest_price}."
+}
+print(result)
+
+# If you are asked to plot a chart, use "matplotlib" for charts
+import matplotlib.pyplot as plt
+
+product_prices_df.plot(x="Product Name", y="Price (USD)", kind='bar')
+plt.title('Product Prices')
+plt.xlabel('Product Name')
+plt.ylabel('Price (USD)')
+plt.savefig("temp_chart.png")
+print(f"The chart is saved as temp_chart.png")
+            ```
+            
+2024-09-03 15:06:06 [INFO] Executing Step 4: CachePopulation
+2024-09-03 15:06:06 [INFO] Executing Step 5: CodeCleaning
+2024-09-03 15:06:06 [INFO] Saving charts to C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\exports\charts\temp_chart.png
+2024-09-03 15:06:06 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\helpers\\save_chart.py', reloading
+2024-09-03 15:06:06 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_cleaning.py', reloading
+2024-09-03 15:06:06 [INFO] 
+Code running:
+```
+pre_prompt = 'I can help with questions about products. What would you like to know?'
+conversation_history = [['ask me a question about the products that you search'], ['hey'], ['OK'], ['hey']]
+conversation_history.insert(0, pre_prompt)
+question = conversation_history[1][0]
+print(question)
+user_response = conversation_history[2][0]
+product_prices_df = dfs[1]
+highest_price = product_prices_df['Price (USD)'].max()
+print(f'The highest price is ${highest_price}.')
+result = {'type': 'string', 'value': f'The highest price is ${highest_price}.'}
+print(result)
+product_prices_df.plot(x='Product Name', y='Price (USD)', kind='bar')
+plt.title('Product Prices')
+plt.xlabel('Product Name')
+plt.ylabel('Price (USD)')
+plt.savefig('C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+print(f'C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+        ```
+2024-09-03 15:06:06 [INFO] Executing Step 6: CodeExecution
+2024-09-03 15:06:06 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+IndexError: list index out of range
+
+2024-09-03 15:06:06 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\code_execution.py', reloading
+2024-09-03 15:06:06 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-09-03 15:06:06 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-09-03 15:06:06 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\error_correction_pipeline\\error_correction_pipeline.py', reloading
+2024-09-03 15:06:06 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-09-03 15:06:06 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+johnson81;4081;Craig;Johnson
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+
+You generated this python code:
+pre_prompt = 'I can help with questions about products. What would you like to know?'
+conversation_history = [['ask me a question about the products that you search'], ['hey'], ['OK'], ['hey']]
+conversation_history.insert(0, pre_prompt)
+question = conversation_history[1][0]
+print(question)
+user_response = conversation_history[2][0]
+product_prices_df = dfs[1]
+highest_price = product_prices_df['Price (USD)'].max()
+print(f'The highest price is ${highest_price}.')
+result = {'type': 'string', 'value': f'The highest price is ${highest_price}.'}
+print(result)
+product_prices_df.plot(x='Product Name', y='Price (USD)', kind='bar')
+plt.title('Product Prices')
+plt.xlabel('Product Name')
+plt.ylabel('Price (USD)')
+plt.savefig('C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+print(f'C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+IndexError: list index out of range
+
+
+Fix the python code above and return the new python code:
+2024-09-03 15:06:06 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\error_correction_pipeline\\error_prompt_generation.py', reloading
+2024-09-03 15:06:06 [INFO] Executing Step 1: CodeGenerator
+2024-09-03 15:06:24 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+2024-09-03 15:06:25 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:06:25 [INFO] Prompt ID: acfbbc2c-c405-44ae-810d-55451aafd46f
+2024-09-03 15:06:25 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:06:25 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:06:25 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:06:25 [INFO] Using cached response
+2024-09-03 15:06:25 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\env\\Lib\\site-packages\\pandasai\\pipelines\\chat\\cache_lookup.py', reloading
+2024-09-03 15:06:25 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:06:25 [INFO] Executing Step 2: Skipping...
+2024-09-03 15:06:25 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:06:25 [INFO] Executing Step 3: Skipping...
+2024-09-03 15:06:25 [INFO] Executing Step 4: CachePopulation
+2024-09-03 15:06:25 [INFO] Executing Step 4: Skipping...
+2024-09-03 15:06:25 [INFO] Executing Step 5: CodeCleaning
+2024-09-03 15:06:25 [INFO] Saving charts to C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\exports\charts\temp_chart.png
+2024-09-03 15:06:25 [INFO] 
+Code running:
+```
+pre_prompt = 'I can help with questions about products. What would you like to know?'
+conversation_history = [['ask me a question about the products that you search'], ['hey'], ['OK'], ['hey']]
+conversation_history.insert(0, pre_prompt)
+question = conversation_history[1][0]
+print(question)
+user_response = conversation_history[2][0]
+product_prices_df = dfs[1]
+highest_price = product_prices_df['Price (USD)'].max()
+print(f'The highest price is ${highest_price}.')
+result = {'type': 'string', 'value': f'The highest price is ${highest_price}.'}
+print(result)
+product_prices_df.plot(x='Product Name', y='Price (USD)', kind='bar')
+plt.title('Product Prices')
+plt.xlabel('Product Name')
+plt.ylabel('Price (USD)')
+plt.savefig('C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+print(f'C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+        ```
+2024-09-03 15:06:25 [INFO] Executing Step 6: CodeExecution
+2024-09-03 15:06:25 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+IndexError: list index out of range
+
+2024-09-03 15:06:25 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-09-03 15:06:25 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-09-03 15:06:25 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-09-03 15:06:25 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+jenkins46;9346;Mary;Jenkins
+smith79;5079;Jamie;Smith
+johnson81;4081;Craig;Johnson
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"]]
+    
+
+
+You generated this python code:
+pre_prompt = 'I can help with questions about products. What would you like to know?'
+conversation_history = [['ask me a question about the products that you search'], ['hey'], ['OK'], ['hey']]
+conversation_history.insert(0, pre_prompt)
+question = conversation_history[1][0]
+print(question)
+user_response = conversation_history[2][0]
+product_prices_df = dfs[1]
+highest_price = product_prices_df['Price (USD)'].max()
+print(f'The highest price is ${highest_price}.')
+result = {'type': 'string', 'value': f'The highest price is ${highest_price}.'}
+print(result)
+product_prices_df.plot(x='Product Name', y='Price (USD)', kind='bar')
+plt.title('Product Prices')
+plt.xlabel('Product Name')
+plt.ylabel('Price (USD)')
+plt.savefig('C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+print(f'C:/Users/pzmuda/Desktop/pocketH/pyt-be-phai/exports/charts/temp_chart.png')
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 7, in <module>
+IndexError: list index out of range
+
+
+Fix the python code above and return the new python code:
+2024-09-03 15:06:25 [INFO] Executing Step 1: CodeGenerator
+2024-09-03 15:07:47 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+2024-09-03 15:07:49 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:07:49 [INFO] Prompt ID: 13f5dc3f-dd7c-45ec-ab90-7303951ae189
+2024-09-03 15:07:49 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:07:49 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:07:49 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:07:49 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:07:49 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+grey07;2070;Laura;Grey
+johnson81;4081;Craig;Johnson
+booker12;9012;Rachel;Booker
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 15:07:49 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:08:38 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:08:38 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:09:06 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: hey
+    
+
+2024-09-03 15:09:08 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:09:08 [INFO] Prompt ID: c56d9167-f72e-4cbc-b685-5bcc3676bd9d
+2024-09-03 15:09:08 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:09:08 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:09:08 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:09:08 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:09:08 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+jenkins46;9346;Mary;Jenkins
+smith79;5079;Jamie;Smith
+johnson81;4081;Craig;Johnson
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: hey
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 15:09:08 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:09:23 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:09:23 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:09:44 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: hey
+    
+
+2024-09-03 15:09:45 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:09:45 [INFO] Prompt ID: 74200853-e09a-47eb-a093-e7152183ff50
+2024-09-03 15:09:45 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:09:45 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:09:45 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:09:45 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:09:45 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+smith79;5079;Jamie;Smith
+jenkins46;9346;Mary;Jenkins
+johnson81;4081;Craig;Johnson
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: hey
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 15:09:45 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:10:10 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:10:10 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:10:10 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:10:10 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:11:11 [INFO] Question: 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: hey
+    
+
+2024-09-03 15:11:13 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:11:13 [INFO] Prompt ID: 97703dee-6de6-4333-9913-4dea53b46aa6
+2024-09-03 15:11:13 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:11:13 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:11:13 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:11:13 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:11:13 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+booker12;9012;Rachel;Booker
+grey07;2070;Laura;Grey
+smith79;5079;Jamie;Smith
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ 
+    Conversation History: [["ask me a question about the products that you search"],["hey"],["OK"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"],["i dont understand the question, can you ask me one more time?"],["hey"]]
+    
+
+    tutaj dodaj preprompting 
+    User query: hey
+    
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 15:11:13 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:12:16 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:12:16 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:12:16 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:12:16 [INFO]  * Detected change in 'C:\\Users\\pzmuda\\Desktop\\pocketH\\pyt-be-phai\\app.py', reloading
+2024-09-03 15:17:03 [INFO] Question: hey how are you?
+2024-09-03 15:17:03 [INFO] Running PandasAI with local LLM...
+2024-09-03 15:17:03 [INFO] Prompt ID: d5bb145f-8d4a-487b-91dc-cae8e4981605
+2024-09-03 15:17:03 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-09-03 15:17:03 [INFO] Executing Step 0: ValidatePipelineInput
+2024-09-03 15:17:03 [INFO] Executing Step 1: CacheLookup
+2024-09-03 15:17:03 [INFO] Executing Step 2: PromptGeneration
+2024-09-03 15:17:03 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+jenkins46;9346;Mary;Jenkins
+grey07;2070;Laura;Grey
+booker12;9012;Rachel;Booker
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ hey how are you?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-09-03 15:17:03 [INFO] Executing Step 3: CodeGenerator
+2024-09-03 15:19:29 [INFO] HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-03 15:19:29 [INFO] Prompt used:
+            <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+jenkins46;9346;Mary;Jenkins
+grey07;2070;Laura;Grey
+booker12;9012;Rachel;Booker
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ hey how are you?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-09-03 15:19:29 [INFO] Code generated:
+            ```
+            # Import library and create Dataframe
+import pandas as pd
+
+# Create Dataframe
+data = {
+    "Username": ["jenkins46", "grey07", "booker12"],
+    "Identifier": [9346, 2070, 9012],
+    "First name": ["Mary", "Laura", "Rachel"],
+    "Last name": ["Jenkins", "Grey", "Booker"]
+}
+dfs = pd.DataFrame(data)
+
+# Perform some operations on Dataframe
+highest_identifier = dfs["Identifier"].max()
+average_age = len(dfs)  # There is no age data available, so I calculated the number of users in this example.
+string_concatenation = ' '.join(str(x) for x in [highest_identifier, average_age])
+
+# Declare result variable 
+result = {
+    "type": "string",
+    "value": string_concatenation
+}
+
+print(result)
+            ```
+            
+2024-09-03 15:19:29 [INFO] Executing Step 4: CachePopulation
+2024-09-03 15:19:29 [INFO] Executing Step 5: CodeCleaning
+2024-09-03 15:19:29 [INFO] 
+Code running:
+```
+data = {'Username': ['jenkins46', 'grey07', 'booker12'], 'Identifier': [9346, 2070, 9012], 'First name': ['Mary', 'Laura', 'Rachel'], 'Last name': ['Jenkins', 'Grey', 'Booker']}
+highest_identifier = dfs['Identifier'].max()
+average_age = len(dfs)
+string_concatenation = ' '.join(str(x) for x in [highest_identifier, average_age])
+result = {'type': 'string', 'value': string_concatenation}
+print(result)
+        ```
+2024-09-03 15:19:29 [INFO] Executing Step 6: CodeExecution
+2024-09-03 15:19:29 [ERROR] Failed with error: Traceback (most recent call last):
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: list indices must be integers or slices, not str
+
+2024-09-03 15:19:29 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-09-03 15:19:29 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-09-03 15:19:29 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-09-03 15:19:29 [INFO] Using prompt: <dataframe>
+dfs[0]:5x1
+Username; Identifier;First name;Last name
+jenkins46;9346;Mary;Jenkins
+grey07;2070;Laura;Grey
+booker12;9012;Rachel;Booker
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ hey how are you?
+
+You generated this python code:
+data = {'Username': ['jenkins46', 'grey07', 'booker12'], 'Identifier': [9346, 2070, 9012], 'First name': ['Mary', 'Laura', 'Rachel'], 'Last name': ['Jenkins', 'Grey', 'Booker']}
+highest_identifier = dfs['Identifier'].max()
+average_age = len(dfs)
+string_concatenation = ' '.join(str(x) for x in [highest_identifier, average_age])
+result = {'type': 'string', 'value': string_concatenation}
+print(result)
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pzmuda\Desktop\pocketH\pyt-be-phai\env\Lib\site-packages\pandasai\pipelines\chat\code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+TypeError: list indices must be integers or slices, not str
+
+
+Fix the python code above and return the new python code:
+2024-09-03 15:19:29 [INFO] Executing Step 1: CodeGenerator

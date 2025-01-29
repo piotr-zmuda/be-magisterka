@@ -1,0 +1,12 @@
+Flask
+flask-cors
+langchain-community
+langchain-core
+langchain-openai
+langchain-groq
+transformers
+streamlit
+pandas
+mysql-connector-python
+torch
+pandasai
