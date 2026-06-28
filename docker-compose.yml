@@ -1,0 +1,76 @@
+services:
+  springboot:
+    container_name: magisterka-spring-app
+    build: .
+    ports:
+      - "8081:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://pg_db:5432/magisterka
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=9p[iIao8YLe*ftn1YJVTl2!
+      - SPRING_REDIS_HOST=redis
+      - MONGO_DB_HOST=mongo
+      - SPRING_OCR_URL=http://ocr:8090
+      - SPRING_OLLAMA_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=llama3.2
+    expose:
+      - 8080
+    depends_on:
+      - pg_db
+      - redis
+    networks:
+      - magisterka-network
+
+  pg_db:
+    container_name: magisterka-db-data
+    image: postgres:17.4
+    ports:
+      - "5436:5432"
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 9p[iIao8YLe*ftn1YJVTl2!
+      POSTGRES_DB: magisterka
+    expose:
+      - 5432
+    volumes:
+      - magisterka_pgdata:/var/lib/postgresql/data
+    networks:
+      - magisterka-network
+
+  mongo:
+    container_name: magisterka-mongo
+    image: mongo:latest
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    expose:
+      - 27017
+    ports:
+      - "27018:27017"
+    volumes:
+      - magisterka_mongo_data:/data/db
+    networks:
+      - magisterka-network
+
+  redis:
+    container_name: magisterka-redis
+    image: redis:6.2
+    restart: always
+    ports:
+      - "6380:6379"
+    volumes:
+      - magisterka_redis_data:/data
+    networks:
+      - magisterka-network
+
+volumes:
+  magisterka_pgdata:
+  magisterka_redis_data:
+  magisterka_mongo_data:
+
+networks:
+  magisterka-network:
+    driver: bridge
